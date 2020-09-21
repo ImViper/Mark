@@ -1336,7 +1336,7 @@ public class EnglishPane extends  Application{
         primaryStage.setTitle("±ê×¢Æ½Ì¨");
         primaryStage.setScene(scene);
         Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
-        primaryStage.setX((screenBounds.getWidth() - 800) / 1.5);
+        primaryStage.setX((screenBounds.getWidth() - 800) / 1.1);
         primaryStage.setY((screenBounds.getHeight() - 800) / 2);
         primaryStage.show();
 
