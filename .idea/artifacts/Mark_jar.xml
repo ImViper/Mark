@@ -1,0 +1,41 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Mark:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/Mark_jar</output-path>
+    <root id="archive" name="Mark.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/dabao/v1/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Mark" />
+      <element id="library" level="module" name="poi-ooxml-3.17.jar" module-name="Mark" />
+      <element id="library" level="module" name="poi-ooxml-schemas-3.17.jar" module-name="Mark" />
+      <element id="library" level="module" name="commons-codec-1.10.jar" module-name="Mark" />
+      <element id="library" level="module" name="log4j-1.2.17.jar" module-name="Mark" />
+      <element id="library" level="module" name="junit-4.12.jar" module-name="Mark" />
+      <element id="library" level="module" name="commons-logging-1.2.jar" module-name="Mark" />
+      <element id="library" level="module" name="commons-collections4-4.1.jar" module-name="Mark" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jxl.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/poi-3.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/junit-4.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/dom4j-2.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/log4j-1.2.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/curvesapi-1.04.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/poi-ooxml-3.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/xmlbeans-2.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/poi-examples-3.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/poi-excelant-3.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-codec-1.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/poi-scratchpad-3.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/poi-ooxml-schemas-3.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-collections4-4.1.jar" path-in-jar="/" />
+      <element id="library" level="module" name="dom4j-2.0.2.jar" module-name="Mark" />
+      <element id="library" level="module" name="xmlbeans-2.6.0.jar" module-name="Mark" />
+      <element id="library" level="module" name="curvesapi-1.04.jar" module-name="Mark" />
+      <element id="library" level="module" name="poi-3.17.jar" module-name="Mark" />
+      <element id="library" level="module" name="poi-scratchpad-3.17.jar" module-name="Mark" />
+      <element id="library" level="module" name="poi-excelant-3.17.jar" module-name="Mark" />
+      <element id="library" level="module" name="jxl.jar" module-name="Mark" />
+      <element id="library" level="module" name="poi-examples-3.17.jar" module-name="Mark" />
+    </root>
+  </artifact>
+</component>
