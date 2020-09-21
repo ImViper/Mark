@@ -49,7 +49,14 @@ import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 
 public class EnglishPane extends  Application{
-
+    public EnglishPane() {
+        Stage stage = new Stage();
+        try {
+            start(stage);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     public static void main(String[] argv) {
 
         Application.launch(argv);
@@ -1326,6 +1333,7 @@ public class EnglishPane extends  Application{
         Scene scene = new Scene(mainBorderpane1, 800, 800);
         primaryStage.setTitle("±ê×¢Æ½Ì¨");
         primaryStage.setScene(scene);
+
         primaryStage.show();
 
 

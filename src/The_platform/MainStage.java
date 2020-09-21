@@ -79,6 +79,7 @@ public class MainStage extends Application {
 	boolean sub_sentence = false;
 	boolean select_position = false;
 	Button loading; // 载入按钮
+	Button loadingEng;//载入英文
 	File save_mkdir; // 保存标注文档的目录
 	File have_read;
 	ComboBox<String> filelist; // 载入文件列表
@@ -98,6 +99,7 @@ public class MainStage extends Application {
 
 	/** 中间文本区域 */
 	JTextPane center_part;
+	JTextPane center_part2;
 	SwingNode swingNode;// 放置中间文本的节点
 	String origine_para = "";
 	String update_centerpart = "";
@@ -164,6 +166,8 @@ public class MainStage extends Application {
 		filelist = new ComboBox<>();
 		loading = new Button("载入");
 		loading.setDisable(true);
+		loadingEng = new Button("载入英文");
+
 		have_read = new File("读取到.txt");
 		if (have_read.exists()) {
 			Scanner input = new Scanner(have_read);
@@ -181,6 +185,7 @@ public class MainStage extends Application {
 					filelist.setValue(last_read_article);
 					para_id = Integer.valueOf(input.nextLine());
 					loading.setDisable(false);
+
 				}
 			}
 			input.close();
@@ -221,6 +226,7 @@ public class MainStage extends Application {
 			in_liulan2.setText(save_file.toString());
 
 			loading.setDisable(false);
+
 		});
 		Label fiLabel = new Label("文件：");
 
@@ -284,6 +290,10 @@ public class MainStage extends Application {
 			up_para.setDisable(false);
 			next_para.setDisable(false);
 		});
+		/* Engloading*/
+		loadingEng.setOnAction(e ->{
+			The_platform.EnglishPane eng = new EnglishPane();
+		} );
 
 		VBox for_display = new VBox();
 		ToggleGroup toggleGroup = new ToggleGroup();
@@ -304,6 +314,7 @@ public class MainStage extends Application {
 		In_mtop1.add(fiLabel, 0, 1);
 		In_mtop1.add(filelist, 1, 1);
 		In_mtop1.add(loading, 2, 1);
+		In_mtop1.add(loadingEng,3,1);
 		In_mtop1.add(for_display, 4, 1);
 		In_mtop1.setAlignment(Pos.CENTER);
 
@@ -1968,4 +1979,7 @@ public class MainStage extends Application {
 		}
 		sum_degree++;
 	}
+
+
+
 }
