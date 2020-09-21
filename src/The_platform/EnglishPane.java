@@ -23,6 +23,7 @@ import javafx.embed.swing.SwingNode;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -46,6 +47,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.DirectoryChooser;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 public class EnglishPane extends  Application{
@@ -1333,7 +1335,9 @@ public class EnglishPane extends  Application{
         Scene scene = new Scene(mainBorderpane1, 800, 800);
         primaryStage.setTitle("±ê×¢Æ½Ì¨");
         primaryStage.setScene(scene);
-
+        Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
+        primaryStage.setX((screenBounds.getWidth() - 800) / 1.5);
+        primaryStage.setY((screenBounds.getHeight() - 800) / 2);
         primaryStage.show();
 
 
